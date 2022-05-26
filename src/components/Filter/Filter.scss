@@ -1,0 +1,147 @@
+.filter__container{
+  max-width: 1120px;
+  margin: 0 auto 45px;
+  display: flex;
+  align-items: center;
+}
+
+.filter__timeline{
+  display: flex;
+  align-items: center;
+  width: 285px;
+}
+
+.filter__time{
+  width: 95px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #efefef;
+  border: none;
+  outline: 1px solid #000;
+}
+
+.filter__input{
+  padding: 15px;
+  margin-right: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.filter__select{
+  margin-right: 20px;
+  width: 265px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.filter__option:hover{
+  background-color: #000;
+  color: white;
+}
+
+.filter__select:nth-child(3n){
+  margin-right: 60px;
+}
+
+.filter__line{
+  max-width: 15px;
+  height: 8px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.input--dark{
+  background: #0C0C0C;
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.select--dark{
+  background: #0C0C0C;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.line--dark line{
+  stroke: white;
+}
+
+@media (max-width: 1120px) {
+  .filter__container{
+    max-width: 940px;
+    margin: 0 auto 35px;
+  }
+  .filter__select{
+    width: 220px;
+  }
+  .filter__select:nth-child(3n){
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .filter__container{
+    max-width: 700px;
+    margin: 0 auto 35px;
+  }
+  .filter__input{
+    width: 160px;
+  }
+  .filter__select{
+    width: 160px;
+  }
+  .filter__select:nth-child(3n){
+    margin-right: 20px;
+  }
+
+  .filter__time{
+    padding: 15px 5px;
+    width: 55px;
+  }
+
+  .filter__line{
+    max-width: 10px;
+    margin-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 720px){
+  .filter__container{
+    max-width: 280px;
+    margin: 0 auto 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter__input{
+    width: 248px;
+    margin: 0 0 15px 0;
+  }
+  .filter__select{
+    width: 280px;
+    margin: 0 0 15px 0;
+  }
+  .filter__select:nth-child(3n){
+    margin-right: 0;
+  }
+  .filter__timeline{
+    width: 280px;
+  }
+  .filter__time{
+    width: 95px;
+    padding: 15px;
+  }
+  .filter__line{
+    max-width: 15px;
+    margin-right: 8px;
+    padding-left: 8px;
+  }
+}

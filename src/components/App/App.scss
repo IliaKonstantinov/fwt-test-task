@@ -1,0 +1,26 @@
+html{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../../assets/fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.app--dark{
+  background-color: #000;
+}

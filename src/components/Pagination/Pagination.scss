@@ -1,0 +1,97 @@
+.pagination__container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 97px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination__image{
+  max-width: 14px;
+  max-height: 13px;
+  padding: 14px 14px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: .3s background-color ease;
+}
+
+.pagination__page{
+  padding: 10.5px 14px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: .3s background-color ease;
+}
+
+.pagination__first{
+  border-radius: 15px 0 0 15px;
+}
+
+.pagination__last{
+  border-radius: 0 15px 15px 0;
+}
+
+.pagination__page:hover,
+.pagination__image:hover{
+  background-color: #dbdbdb;
+}
+
+.image--disabled{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.current--page{
+  pointer-events: none;
+  background-color: black;
+  color: white;
+}
+
+.svg--dark path{
+  fill: white;
+}
+
+.image--dark {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.page--dark{
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: #fff;
+}
+
+.current--page--dark{
+  background-color: #fff;
+  color: #000;
+}
+
+.page--dark:hover {
+  background-color: #464646;
+}
+
+
+@media (max-width: 1120px) {
+  .pagination__container{
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .pagination__container{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .pagination__container{
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
