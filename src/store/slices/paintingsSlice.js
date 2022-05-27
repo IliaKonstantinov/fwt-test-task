@@ -100,9 +100,11 @@ const paintingsSlice = createSlice({
           state.pages[1] = state.currentPage;
           state.pages[2] = state.currentPage + 1;
         }
-      } else {
+      } else if (state.pages.length === 2) {
         state.pages[0] = 1;
         state.pages[1] = 2;
+      } else {
+        state.pages[0] = 1;
       }
     },
     paginatePaintings: (state) => {
